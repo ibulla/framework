@@ -1,4 +1,4 @@
-# framework
+# About
 ### [a barebones framework created to manage ibulla.com.](https://ibulla.com/)
 The primary concept behind this repository is to create a straightforward and practical framework for showcasing my art, works, and portfolio. As an artist, the portfolio is a pivotal aspect of my creative journey. It serves a dual purpose – to catalog my work efficiently and to present it in an elegant and user-friendly manner.
 
