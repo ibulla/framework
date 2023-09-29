@@ -23,19 +23,18 @@ $title = "CONTACT/CV";
                 <div class="row">
                     <div class="col-lg-6">
                         <h2>Contact</h2>
-                        <p><i>There is no time like the present</i></p>
+                        <p><i>some words</i></p>
                         <p id='email-placeholder'>_wait4it_</p>
-                        <p>+41 (0)76 394 3982</p>
+                        <p>+41 (0)77 123 45 67</p>
 
         <!-- Profile Picture -->
-        <img src="http://ibulla.com/i/assets/img/portrait-marco-spitzbarth-23.jpg" alt="Marco Spitzbarth" class="img-fluid rounded-circle mx-auto d-block pt-3" width="50%">
+        <img src="http://ibulla.com/i/assets/img/portrait.jpg" alt="My cool alt" class="img-fluid rounded-circle mx-auto d-block pt-3" width="50%">
 
                     </div>
                     <div class="col-lg-6">
-                        <h2>Atelier</h2>
-                        <p>Basislager 80/20<br>Aargauerstrasse 52-94<br>8048 Zürich</p>
-                        <p>Tram 4 bis Würzgraben</p>
-                        <iframe width="100%" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=8.494998514652254%2C47.39184357666707%2C8.497855067253115%2C47.393877237765665&amp;layer=mapnik&amp;marker=47.3928604170262%2C8.496426790952682" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=47.39286&amp;mlon=8.49643#map=19/47.39286/8.49643">View Larger Map</a></small>
+                        <h2>Studio</h2>
+                        <p>Place<br>Addres</p>
+                        <!--<iframe width="100%" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=8.494998514652254%2C47.39184357666707%2C8.497855067253115%2C47.393877237765665&amp;layer=mapnik&amp;marker=47.3928604170262%2C8.496426790952682" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=47.39286&amp;mlon=8.49643#map=19/47.39286/8.49643">View Larger Map</a></small>-->
                     </div>
                 </div>
             </div>
@@ -52,23 +51,14 @@ $title = "CONTACT/CV";
 <table class="cv-table">
     <thead><tr><th colspan='2'>Steps</th></tr></thead>
     <tbody>
-        <tr><td width="25%">2020</td><td>Guest lecturer at ZHdK, AI and image recognition</td></tr>
-        <tr><td>2016 - 2019</td><td>Bachelor Arts & Media, digitality Zurich University of the Arts (ZHdK)</td></tr>
-        <tr><td>2018</td><td>Transcultural Collaboration, Intern</td></tr>
+        <tr><td width="25%">2030</td><td>Flight to Mars</td></tr>
     </tbody>
 </table>
 
 <table class="cv-table">
     <thead><tr><th colspan='2'>Exhibitions (selection)</th></tr></thead>
     <tbody>
-        <tr><td width="25%">2022</td><td>SudorMeta, Material Zürich</td></tr>
-        <tr><td>2019</td><td>Diploma ZHdK, Zürich</td></tr>
-        <tr><td>2018</td><td>Transcultural Collaboration, Hong Kong</td></tr>
-        <tr><td>2018</td><td>Transcultural Collaboration, Shanghai</td></tr>
-        <tr><td>2018</td><td>Besenkammer, Zurich</td></tr>
-        <tr><td>2017</td><td>digital markets, MuDa, Zurich</td></tr>
-        <tr><td>2017</td><td>Technopolitics Timeline, Connecting Spaces, Hong Kong</td></tr>
-        <tr><td>2017</td><td>Highlights, ZHdK</td></tr>
+        <tr><td width="25%">1234</td><td>Off Space X4U</td>
     </tbody>
 </table>
 
@@ -92,7 +82,7 @@ echo '<div class="container mt-3 mb-5">';
     echo "Error generating online cards.";
     }
 echo "</div></div></section>";
-
+/////////////////
 
 
 include_once '../includes/footer.php';
@@ -100,12 +90,12 @@ include_once '../includes/footer.php';
 
 <script>
         function revealEmail() {
-            var email = 'bulla@ibulla.com'; // Replace with your email address
+            var email = 'cool@mail.com'; // Replace with your email address
 
             var emailPlaceholder = document.getElementById('email-placeholder');
             
             // Display 'Email: ' first
-            emailPlaceholder.innerHTML = 'Marco Spitzbarth<br>';
+            emailPlaceholder.innerHTML = 'iBulla<br>';
 
             // Wait for 2 seconds before revealing the email
             setTimeout(function() {
