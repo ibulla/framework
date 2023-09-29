@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteBase /i/
+
+# Rewrite /i/works to /i/works.php
+RewriteRule ^works$ works.php [L]
+
+# Rewrite friendly URLs like /works/fighting-kangaroo to works.php?title=fighting-kangaroo
+RewriteRule ^works/([^/]+)/?$ works.php?title=$1 [L]

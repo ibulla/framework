@@ -1,0 +1,79 @@
+.
+├── .DS_Store
+├── .htaccess
+├── README.md
+├── admin
+│   ├── admin_dashboard.php
+│   ├── admin_login.php
+│   ├── create_blog.php
+│   ├── create_card.php
+│   ├── delete_blog.php
+│   ├── delete_card.php
+│   ├── delete_image.php
+│   ├── index.php
+│   ├── login.php
+│   ├── logout.php
+│   ├── manage_blog_posts.php
+│   ├── manage_blog_posts_update.php
+│   ├── manage_cards.php
+│   ├── manage_images.php
+│   ├── postAcceptor.php
+│   ├── process_image_upload.php
+│   ├── process_update_blog.php
+│   ├── process_update_card.php
+│   ├── set_psw.php
+│   └── test.php
+├── assets
+│   ├── .DS_Store
+│   ├── css
+│   │   ├── bootstrap-grid.css
+│   │   ├── bootstrap-grid.css.map
+│   │   ├── bootstrap-grid.min.css
+│   │   ├── bootstrap-grid.min.css.map
+│   │   ├── bootstrap-reboot.css
+│   │   ├── bootstrap-reboot.css.map
+│   │   ├── bootstrap-reboot.min.css
+│   │   ├── bootstrap-reboot.min.css.map
+│   │   ├── bootstrap.css
+│   │   ├── bootstrap.css.map
+│   │   ├── bootstrap.min.css
+│   │   ├── bootstrap.min.css.map
+│   │   ├── normalize.css
+│   │   └── styles.css
+│   ├── img
+│   │   ├── .DS_Store
+│   │   ├── 2-geese-2posthuman-ibulla.pdf
+│   │   └── 2-geese-profile-picture.jpg
+│   ├── js
+│   │   ├── bootstrap.bundle.js
+│   │   ├── bootstrap.bundle.js.map
+│   │   ├── bootstrap.bundle.min.js
+│   │   ├── bootstrap.bundle.min.js.map
+│   │   ├── bootstrap.js
+│   │   ├── bootstrap.js.map
+│   │   ├── bootstrap.min.js
+│   │   ├── bootstrap.min.js.map
+│   │   ├── imagesloaded.pkgd.min.js
+│   │   ├── jquery.min.js
+│   │   ├── masonry.pkgd.min.js
+│   │   ├── popper.min.js
+│   │   ├── popper.min.js.map
+│   │   └── scripts.js
+│   ├── scripts
+│   │   └── rgb-hex-cube.php
+│   └── uploads
+│       ├── .DS_Store
+│       └── iBulla-works-25-09-2023_OVIN.png
+├── bulla
+│   ├── .htaccess
+│   ├── bio.php
+│   └── contact.php
+├── includes
+│   ├── db.php
+│   ├── footer.php
+│   ├── functions.php
+│   └── header.php
+├── tree.txt
+└── works.php
+
+10 directories, 67 files
