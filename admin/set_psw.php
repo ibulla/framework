@@ -12,7 +12,7 @@ if (!isset($_SESSION["admin_username"])) {
 include("../includes/db.php"); // Include the database connection script
 
 // Query to fetch all existing users
-$query = "SELECT id, username FROM admin_users";
+$query = "SELECT * FROM admin_users";
 $result = $conn->query($query);
 
 if ($result->num_rows > 0) {
@@ -23,6 +23,7 @@ if ($result->num_rows > 0) {
     $show_users .= '<th>User ID</th>';
     $show_users .= '<th>Username</th>';
     $show_users .= '<th>Password</th>';
+    $show_users .= '<th>Creation</th>';
     $show_users .= '<th>Action</th>'; // Column for the delete button
     $show_users .= '</tr>';
     $show_users .= '</thead>';
@@ -33,6 +34,7 @@ if ($result->num_rows > 0) {
         $show_users .= '<td>' . $row['id'] . '</td>';
         $show_users .= '<td>' . $row['username'] . '</td>';
         $show_users .= '<td>' . $row['password'] . '</td>';
+        $show_users .= '<td>' . $row['created_at'] . '</td>';
         $show_users .= '<td><button class="btn btn-danger" onclick="deleteUser(' . $row['id'] . ')">Delete</button></td>';
         $show_users .= '</tr>';
     }
