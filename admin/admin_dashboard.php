@@ -64,7 +64,7 @@ if (!isset($_SESSION["admin_username"])) {
                                 <a href="manage_blog_posts.php">Manage Blog Posts</a>
                             </li>
                             <li class="list-group-item">
-                                <a href="set_psw.php">SET PASSWORD*</a>
+                                <a href="set_psw.php">+SET PASSWORD+</a>
                             </li>
                             <!-- Add more links/buttons for other admin tasks as needed -->
                         </ul>
