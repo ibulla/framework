@@ -34,11 +34,11 @@ if (!isset($_SESSION["admin_username"])) {
             <li class="nav-item">
                 <a class="nav-link" href="manage_cards.php">Manage Cards</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="manage_blog_posts.php">Manage Blogs</a>
+             <li class="nav-item">
+                <a class="nav-link" href="manage_images.php">Manage Card Images</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="manage_images.php">Manage Images</a>
+                <a class="nav-link" href="manage_blog_posts.php">Manage Blogs</a>
             </li>
             <!-- Add more menu items as needed -->
         </ul>
@@ -58,13 +58,13 @@ if (!isset($_SESSION["admin_username"])) {
                                 <a href="manage_cards.php">Manage Cards</a>
                             </li>
                             <li class="list-group-item">
+                                <a href="manage_images.php">Manage Card Images</a>
+                            </li>
+                            <li class="list-group-item">
                                 <a href="manage_blog_posts.php">Manage Blog Posts</a>
                             </li>
                             <li class="list-group-item">
-                                <a href="manage_images.php">Manage Images</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="set_psw.php">SET PASSWORD</a>
+                                <a href="set_psw.php">SET PASSWORD*</a>
                             </li>
                             <!-- Add more links/buttons for other admin tasks as needed -->
                         </ul>
