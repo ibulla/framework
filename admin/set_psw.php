@@ -11,6 +11,38 @@ if (!isset($_SESSION["admin_username"])) {
 
 include("../includes/db.php"); // Include the database connection script
 
+// Query to fetch all existing users
+$query = "SELECT id, username FROM admin_users";
+$result = $conn->query($query);
+
+if ($result->num_rows > 0) {
+    // Start building the table HTML
+    $show_users = '<table class="table table-bordered table-striped">';
+    $show_users .= '<thead>';
+    $show_users .= '<tr>';
+    $show_users .= '<th>User ID</th>';
+    $show_users .= '<th>Username</th>';
+    $show_users .= '<th>Password</th>';
+    $show_users .= '<th>Action</th>'; // Column for the delete button
+    $show_users .= '</tr>';
+    $show_users .= '</thead>';
+    $show_users .= '<tbody>';
+
+    while ($row = $result->fetch_assoc()) {
+        $show_users .= '<tr>';
+        $show_users .= '<td>' . $row['id'] . '</td>';
+        $show_users .= '<td>' . $row['username'] . '</td>';
+        $show_users .= '<td>' . $row['password'] . '</td>';
+        $show_users .= '<td><button class="btn btn-danger" onclick="deleteUser(' . $row['id'] . ')">Delete</button></td>';
+        $show_users .= '</tr>';
+    }
+
+    $show_users .= '</tbody>';
+    $show_users .= '</table>';
+} else {
+    $show_users = "No users found.";
+}
+
 $error_message = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -69,7 +101,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link active" href="#">HOME</a>
+                <a class="nav-link active" href="admin_dashboard">HOME</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="manage_cards.php">Manage Cards</a>
@@ -116,13 +148,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </div>
 
-    <div class="card-footer">
-        <a class="btn btn-danger" href="logout.php">Logout</a>
+    <div class="container mt-4">
+        <h3>User Table</h3>
+        <!-- Display the user table here -->
+        <?php echo $show_users; ?>
     </div>
 
     <!-- Include Bootstrap JavaScript from a CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function deleteUser(userId) {
+            // Display a confirmation dialog
+            var confirmDelete = confirm("Are you sure you want to delete this user? This functionality is not yet implemented.");
+            
+            if (confirmDelete) {
+                // Implement your delete user functionality here
+                alert("Delete functionality should be implemented here.");
+            }
+        }
+    </script>
 </body>
 </html>
