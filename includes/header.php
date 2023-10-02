@@ -16,7 +16,6 @@
 
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700|Montserrat:400,400i,700" />
-
     <link rel="stylesheet" href="../assets/css/styles.css">
 
 
@@ -26,8 +25,8 @@
         <!-- Navigation Menu -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand text-muted" href="/">
-                <img src="https://ibulla.com/wiki/lib/exe/fetch.php/logo.png" alt="iBulla.com" height="35px"><small>iBulla.com</small></a>
-
+                <img src="https://ibulla.com/wiki/lib/exe/fetch.php/logo.png" alt="iBulla.com" height="35px"><small>iBulla.com</small>
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -43,4 +42,4 @@
             </div>
         </nav>
     </header>
-    <main>
+<main>
