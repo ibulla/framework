@@ -60,6 +60,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="admin_dashboard.php">Admin Dashboard</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="manage_cards.php">Manage Cards</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav-link" href="manage_images.php">Manage Card Images</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="manage_blog_posts.php">Manage Blogs</a>
+            </li>
+            <!-- Add more menu items as needed -->
+        </ul>
+    </div>
+</nav>
+    
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-4 offset-md-4">
