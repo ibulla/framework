@@ -33,7 +33,7 @@ if ($result->num_rows > 0) {
         $show_users .= '<tr>';
         $show_users .= '<td>' . $row['id'] . '</td>';
         $show_users .= '<td>' . $row['username'] . '</td>';
-        $show_users .= '<td>' . $row['password'] . '</td>';
+        $show_users .= '<td></small>' . $row['password'] . '</small></td>';
         $show_users .= '<td>' . $row['created_at'] . '</td>';
         $show_users .= '<td><button class="btn btn-danger" onclick="deleteUser(' . $row['id'] . ')">Delete</button></td>';
         $show_users .= '</tr>';
