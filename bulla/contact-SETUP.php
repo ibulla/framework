@@ -28,7 +28,7 @@ $title = "CONTACT/CV";
                         <p>+41 (0)77 123 45 67</p>
 
         <!-- Profile Picture -->
-        <img src="http://ibulla.com/i/assets/img/portrait.jpg" alt="My cool alt" class="img-fluid rounded-circle mx-auto d-block pt-3" width="50%">
+        <img src="http://ibulla.com/i/assets/img/2-geese-profile-picture.jpg" alt="My cool alt" class="img-fluid rounded-circle mx-auto d-block pt-3" width="50%">
 
                     </div>
                     <div class="col-lg-6">
