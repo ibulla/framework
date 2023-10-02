@@ -33,9 +33,9 @@ if ($result->num_rows > 0) {
         $show_users .= '<tr>';
         $show_users .= '<td>' . $row['id'] . '</td>';
         $show_users .= '<td>' . $row['username'] . '</td>';
-        $show_users .= '<td></small>' . $row['password'] . '</small></td>';
+        $show_users .= '<td><small>' . $row['password'] . '</small></td>';
         $show_users .= '<td>' . $row['created_at'] . '</td>';
-        $show_users .= '<td><button class="btn btn-danger" onclick="deleteUser(' . $row['id'] . ')">Delete</button></td>';
+        $show_users .= '<td><button class="btn btn-danger" onclick="deleteUser(' . $row['id'] . ')">Delete*</button></td>';
         $show_users .= '</tr>';
     }
 
@@ -151,7 +151,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 
     <div class="container mt-4">
-        <h3>User Table</h3>
+        <h3>Users</h3>
         <!-- Display the user table here -->
         <?php echo $show_users; ?>
     </div>
