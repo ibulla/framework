@@ -31,7 +31,8 @@ To use this framework effectively, you'll need the following:
 5. **Browser Familiarity**: Comfort with using web browsers to open deep links and navigate your portfolio. This skill will make it easier to explore and share your work.
 
 ---
-If you have any questions or encounter challenges, feel free to reach out for assistance.
+> If you have any questions or encounter challenges, feel free to reach out for assistance.
+
 ---
 # Setup
 ## preSetup
@@ -53,6 +54,12 @@ If you have any questions or encounter challenges, feel free to reach out for as
 1. Rename bulla/contact-SETUP.php to bulla/contact.php
 2. use editor to edit html -> bulla/contact.php
 
-## more
+## setup .htaccess
+1. in the root directory
+2. in /bulla
+---
+
+# Manage
 ...
+
    
