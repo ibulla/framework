@@ -32,3 +32,27 @@ To use this framework effectively, you'll need the following:
 
 ---
 If you have any questions or encounter challenges, feel free to reach out for assistance.
+---
+# Setup
+## preSetup
+1. Download repository
+2. Unzip TinyMCE in /admin/
+3. create a MySQL user and DB
+4. create tables -> like database.sql
+5. Rename includes/db-SETUP.php to includes/db.php
+6. enter credentials -> includes/db.php
+
+## setup Admin
+1. admin/set_psw.php -> comment line 1 - 10
+2. run script
+3. set user and psw
+4. reverse point 1
+5. change admin/index.php
+
+## setup Contact/CV
+1. Rename bulla/contact-SETUP.php to bulla/contact.php
+2. use editor to edit html -> bulla/contact.php
+
+## more
+...
+   
