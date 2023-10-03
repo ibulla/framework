@@ -59,7 +59,18 @@ To use this framework effectively, you'll need the following:
 2. in /bulla
 ---
 
-# Manage
+# Manage Content
+...
+yes, it's art.
+## Cards
+
 ...
 
+## Card images
+
+...
+
+## Blog Posts
+
+...
    
