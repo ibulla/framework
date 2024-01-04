@@ -55,6 +55,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Redirect to the same page with the response as a query parameter
-    header("Location: https://ibulla.com/i/admin/manage_blog_posts_update.php?" . http_build_query($response));
+    header("Location: $_SERVER['HTTP_HOST']."/i/admin/manage_blog_posts_update.php?" . http_build_query($response));
 }
 ?>
