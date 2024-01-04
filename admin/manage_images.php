@@ -26,7 +26,7 @@ $Bild_Ausgabe = "";
 if (mysqli_num_rows($result) > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
         $Bild_Ausgabe.= "<tr>";
-        $Bild_Ausgabe.= "<td><img height='80px' src='../assets/img/{$row['image_filename']}' alt='Image'><br>https://ibulla.com/i/assets/img/{$row['image_filename']}</td>";
+        $Bild_Ausgabe.= "<td><img height='80px' src='../assets/img/{$row['image_filename']}' alt='Image'><br>".$_SERVER['HTTP_HOST']."/i/assets/img/{$row['image_filename']}</td>";
         $Bild_Ausgabe.= "<td>{$row['image_filename']}</td>";
         $Bild_Ausgabe.= "<td>{$row['image_description']}</td>";
         $Bild_Ausgabe.= "<td>{$row['upload_date']}</td>";
