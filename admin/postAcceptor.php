@@ -84,7 +84,7 @@ imagedestroy($sourceImage);
 imagedestroy($resizedImage);
 
     header('Content-Type: application/text');
-    echo json_encode(array('location' => "https://ibulla.com/i/assets/uploads/" . $newFilename));
+    echo json_encode(array('location' => $_SERVER['HTTP_HOST']."/i/assets/uploads/" . $newFilename));
   } else {
     // Notify editor that the upload failed
     header("HTTP/1.1 500 Server Error");
