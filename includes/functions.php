@@ -24,7 +24,8 @@ function generateDeepLink($id, $servername, $username, $password, $database) {
         // Fetch the title
         if ($stmt->fetch()) {
             // Build the deep link using the retrieved title
-            $deepLink = "https://ibulla.com/i/works/" . $title;
+            $myURL = "https://" . $_SERVER['HTTP_HOST'];
+            $deepLink = $myURL."/i/works/" . $title;
         }
 
         // Close the statement
