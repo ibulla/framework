@@ -131,16 +131,16 @@ mysqli_close($conn);
 <script type="text/javascript">
 
 function confirmDelete(cardId,imageURL) {
-    if (confirm("Are you sure you want to delete card # " + cardId + " : " + imageURL)) {
-        // User confirmed, send an AJAX request to delete_card.php
+    if (confirm("Are you sure you want to delete image # " + cardId + " : " + imageURL)) {
+        // User confirmed, send an AJAX request to delete_image.php
         fetch("delete_image.php?id=" + cardId + "&image_url=" + imageURL, {
             method: "DELETE", // Use DELETE HTTP method
         })
         .then((response) => response.json())
         .then((data) => {
             if (data.success) {
-                // Card deleted successfully
-                alert("Card deleted successfully!");
+                // Image deleted successfully
+                alert("Image deleted successfully!");
                 window.location.reload(); // Refresh the page
             } else {
                 // Handle errors
