@@ -5,7 +5,7 @@ session_start(); // Start a session to manage user login status
 // Check if the administrator is logged in
 if (!isset($_SESSION["admin_username"])) {
     // Redirect to the login page if not logged in
-    header("Location: admin_login.php");
+    header("Location: https://" . $_SERVER['HTTP_HOST'] . "/framework/admin/admin_login.php");
     exit(); // Stop script execution
 }
 

@@ -5,6 +5,6 @@ session_start(); // Start a session to manage user login status
 session_destroy();
 
 // Redirect to the login page
-header("Location: admin_login.php");
+header("Location: https://" . $_SERVER['HTTP_HOST'] . "/framework/admin/admin_login.php");
 exit(); // Stop script execution
 ?>

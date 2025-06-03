@@ -4,7 +4,7 @@ session_start(); // Start a session to manage user login status
 // Check if the administrator is logged in
 if (!isset($_SESSION["admin_username"])) {
     // Redirect to the login page if not logged in
-    header("Location: admin_login.php");
+    header("Location: https://" . $_SERVER['HTTP_HOST'] . "/framework/admin/admin_login.php");
     exit(); // Stop script execution
 }
 
@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Redirect to the same page with the response as a query parameter
-    header("Location: $_SERVER['HTTP_HOST']."/i/admin/manage_blog_posts_update.php?" . http_build_query($response));
+    header("Location: https://" . $_SERVER['HTTP_HOST'] . "/i/admin/manage_blog_posts_update.php?" . http_build_query($response));
 }
 
 ?>

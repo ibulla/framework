@@ -11,7 +11,7 @@ include("includes/functions.php");
 if (isset($_GET['title'])) {
     $title = $_GET['title'];
 } else {
-    header("Location: /i/works/home");
+    header("Location: https://" . $_SERVER['HTTP_HOST'] . "/i/works/home");
     exit;
 }
 // Sanitize the title (assuming it contains only alphanumeric and hyphen characters)
