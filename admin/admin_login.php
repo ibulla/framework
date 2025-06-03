@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (password_verify($password, $hashed_password)) {
             // Password is correct
             $_SESSION["admin_username"] = $username;
-            header("Location: admin_dashboard.php"); // Redirect to the admin dashboard
+            header("Location: https://" . $_SERVER['HTTP_HOST'] . "/framework/admin/admin_dashboard.php"); // Redirect to the admin dashboard
             exit();
         } else {
             // Password is incorrect
