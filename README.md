@@ -73,4 +73,12 @@ yes, it's art.
 ## Blog Posts
 
 ...
+
+## Running Tests
+
+Execute the PHPUnit suite from the project root:
+
+```bash
+phpunit
+```
    
